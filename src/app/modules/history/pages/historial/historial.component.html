@@ -1,0 +1,5 @@
+
+<div class="history-page">
+    <app-buscador (data)="dataRecibida($event)"></app-buscador>
+    <app-play-list-body [proovedor]="'historial'" [canciones]="canciones | async"></app-play-list-body>
+</div>

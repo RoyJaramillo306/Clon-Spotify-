@@ -1,0 +1,31 @@
+
+<div class="side-bar">
+
+    <div class="sidebar--wrapper">
+
+        <div class="titulo"><i class="bi bi-spotify"></i> SpotiApp</div><br>
+        <ul class="side-bar__list list-one">
+            <li *ngFor="let item of menuPrincipal.defaultOptions" [routerLink]="item.router" class="list-wrapper-item">
+                <i class="uil {{item.icon}} "></i><span class="side-bar__list list-label"> {{item.name}} </span>
+            </li>
+        </ul>
+
+        <div class="side-bar__separator line-separator"></div>
+        <ul class="side-bar__list list-two">
+            <li *ngFor="let item of menuPrincipal.accessLink" class="list-wrapper-item">
+                <i class="uil {{item.icon}} "></i><span class="side-bar__list list-label"> {{item.name}} </span>
+            </li>
+        </ul>
+        
+        <div class="side-bar__separator line-separator"></div>
+        <ul class="side-bar__list list-three">
+            <li *ngFor="let item of opciones">
+                <div class="list-wrapper-item">
+                    <span class="side-bar__list list-label"> {{item.name}} </span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</div>

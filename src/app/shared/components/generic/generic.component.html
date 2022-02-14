@@ -1,0 +1,12 @@
+
+<div class="section--generic">
+    <h1 class="section--generic__title">{{titulo}}</h1><br>
+
+    <div class="section--generic__player--zone">
+        <ul class="player--list" [ngClass]="getModo()">
+            <li *ngFor="let cancion of canciones">
+                <app-card-player [modo]="modo" [cancion]="cancion"></app-card-player>
+            </li>
+        </ul>
+    </div>
+</div>
